@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de clientes</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="home">
+            <div class="header">
+                <header><h1>Tela de cadastros:</h1></header>
+                <div class="campoSelecao">
+                    <select name="" id="select01" class="select1">
+                        <option value="cliente" selected>Cliente</option>
+                        <option value="vendedor">Vendedor</option>
+                        <option value="produto">Produto</option>
+                    </select>
+                </div>
+                <h2>Filtrar por:</h2>
+                <div class="campoSelecao">
+                    <select name="" id="select03" class="select1">
+                    </select>
+                </div>
+                <button type="button" id="gerar-relatorio" class="btn bg-blue"> Gerar Relatorio</button>
+            </div>
+            <div class="flex">
+                <section>
+                    <div id="cadastros">
+                        <form action="">
+                            <fieldset id="field">
+                                <div id="campo-de-inputs">
+                                </div>
+                                <div id="btns">
+                                    <button type="button" class="btn" id="btnCad">Salvar</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </section>
+                <section id="section2">
+                    <div class="campo-busca">
+                        <div>
+                            <span>Campo de busca:</span>
+                            <input type="text" class="inputs" name="" id="campo-de-busca">
+                        </div>
+                        <div id="div-btns">
+                            <button class="btn bg-blue" id="consultar">Buscar</button>
+                            <button class="btn bg-gray" id="resetar">Resetar</button>
+                        </div>
+                    </div>
+                    <div id="container2">
+                        <div id="dados">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="/js/script.js"></script>
+</body>
+</html>

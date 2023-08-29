@@ -1,0 +1,751 @@
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    overflow-y: hidden;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    background-color: rgb(41, 41, 41);
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+    padding: 30px;
+    padding-inline: 50px;
+    height: 50px;
+}
+
+.container {
+    background-color: gray;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.color-white {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    list-style: none;
+}
+
+.container2 {
+    display: flex;
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* sidebar */
+.side {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41, 41, 41);
+    height: 76vh;
+    padding-top: 100px;
+    /* border-bottom-left-radius: 20px; */
+    font-size:large;
+    font-weight: 600;
+}
+
+/* tabelas */
+
+.table {
+    background-color: rgb(41, 41, 41);
+    flex: 1;
+    overflow:hidden;
+}
+
+.main-content {
+    background-color: rgb(65, 64, 64);
+    height: 88.8vh;
+    border-top-left-radius: 20px;
+}
+
+.opcoes {
+    background-color: rgb(27, 27, 24);
+    border-top-left-radius: 20px;
+    color: rgb(170, 166, 166);
+}
+
+.list-flex {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+}
+
+.tabelas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: end;
+    list-style: none;
+}
+
+.tabelas .li {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+}
+
+.li a{
+    text-decoration: none;
+    color: white;
+}
+.hr-size {
+    width: 80%;
+}
+
+#active {
+    background-color: rgb(65, 64, 64);
+    color: white;
+}
+
+.unselected {
+    background-color: rgb(41, 41, 41);
+}
+
+/* usados nos demais membros da lista q n possuirem cor  */
+.bg-black-gray{
+    background-color: rgb(27, 27, 24);
+    color: rgb(170, 166, 166);
+}
+
+/* usado em todas divs funcionais da lista */
+.li-div{
+    padding: 10px;
+    width: 110px;
+    padding-inline: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+}
+
+/* usado para marcar o hover dos elemtentos q n estao ativos */
+.hover-li:hover {
+    background-color: rgb(97, 95, 95);
+    cursor: pointer;
+}
+/* nas extremidades e ao redor do elemnento ativo*/
+.li-unselect{
+    background-color: rgb(65, 64, 64);
+}
+
+/* usado acima da classe selecionada se tiver no meio da lista */
+.top-unselect {
+    border-top-right-radius: 20px;
+    background-color: rgb(27, 27, 24);
+}
+/* usado acima da classe selecionada se tiver no meio da lista */
+.bottom-unselect {
+    border-bottom-right-radius: 20px;
+    background-color: rgb(27, 27, 24);
+    color: rgb(170, 166, 166);
+}
+
+/* usado quando o selecionado é o primeiro da lista */
+.first-element-selected {
+    background-color: rgb(41, 41, 41);
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+}
+
+.first-element-unselected {
+    background-color: rgb(41, 41, 41);
+    padding: 10px;
+}
+/* quando for o ultimo elemento da lista o selecionado */
+.last-element-selected {
+    background-color: rgb(41, 41, 41);
+    border-top-right-radius: 20px;
+    padding: 10px;
+}
+
+.last-element-unselected {
+    background-color: rgb(41, 41, 41);
+    padding: 10px;
+}
+
+table {
+    padding-top: 30px;
+    width: 100%;
+    border-collapse:collapse;
+    white-space: nowrap;
+    text-align: center;
+}
+.thead {
+    border-bottom-right-radius: 20px;
+}
+
+th {
+    padding: 10px;
+    background-color: rgb(39, 39, 39);
+    font-size: large;
+    font-weight: 600;
+    color: rgb(170, 166, 166);
+}
+
+td{
+    padding: 5px;
+    color: white;
+}
+
+select {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(158, 156, 156);
+    outline: none;
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    background-color: rgb(88, 86, 86);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(158, 156, 156);
+}
+
+
+.input {
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: rgb(158, 156, 156);
+    border: solid 3px gray;
+    outline: none;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-busca {
+    width: 15px;
+    padding: 5px;
+}
+
+.div-lupa {
+    background-color: rgb(39, 39, 39);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: solid 1px gray;
+}
+
+.div-lupa:hover{
+    cursor: pointer;
+    background-color: rgb(95, 95, 95);
+}
+
+.btnExcluir {
+    font-size: larger;
+    font-weight: bolder;
+    color: red;
+}
+
+.btnExcluir:hover {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    cursor: pointer;
+    background-color: rgb(77, 75, 75);
+    background-color: rgb(77, 75, 75);
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(77, 75, 75);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(39, 39, 39);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(39, 39, 39);  /* creates padding around scroll thumb */
+}
+
+.over-y-scroll {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.over-y-scroll::-webkit-scrollbar {
+    width: 12px;  
+    height: 20px;             /* width of the entire scrollbar */
+}
+
+.over-y-scroll::-webkit-scrollbar-track {
+    background: rgb(77, 75, 75);        /* color of the tracking area */
+    border-radius: 10px;
+}
+
+.over-y-scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(39, 39, 39);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(39, 39, 39);  /* creates padding around scroll thumb */
+}
+
+.actions-div {
+    gap: 30px;
+}
+
+/* parte 2 */
+
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    overflow-y: hidden;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    background-color: rgb(41, 41, 41);
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+    padding: 30px;
+    padding-inline: 50px;
+    height: 50px;
+}
+
+.container {
+    background-color: gray;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.color-white {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    list-style: none;
+}
+
+.container2 {
+    display: flex;
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* sidebar */
+.side {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41, 41, 41);
+    height: 76vh;
+    padding-top: 130px;
+    /* border-bottom-left-radius: 20px; */
+    font-size:large;
+    font-weight: 600;
+}
+
+/* tabelas */
+
+.table {
+    background-color: rgb(41, 41, 41);
+    flex: 1;
+    overflow:hidden;
+}
+
+.main-content {
+    background-color: rgb(65, 64, 64);
+    height: 88.8vh;
+    border-top-left-radius: 20px;
+}
+
+.opcoes {
+    background-color: rgb(27, 27, 24);
+    border-top-left-radius: 20px;
+    color: rgb(170, 166, 166);
+}
+
+.list-flex {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+}
+
+.tabelas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: end;
+    list-style: none;
+}
+
+.tabelas .li {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.hr-size {
+    width: 80%;
+}
+
+.active {
+    background-color: rgb(65, 64, 64);
+    color: white;
+}
+
+.unselected {
+    background-color: rgb(41, 41, 41);
+}
+
+/* usados nos demais membros da lista q n possuirem cor  */
+.bg-black-gray{
+    background-color: rgb(27, 27, 24);
+    color: rgb(170, 166, 166);
+}
+
+/* usado em todas divs funcionais da lista */
+.li-div{
+    padding: 10px;
+    width: 110px;
+    padding-inline: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+}
+
+/* usado para marcar o hover dos elemtentos q n estao ativos */
+.hover-li:hover {
+    background-color: rgb(97, 95, 95);
+    cursor: pointer;
+}
+/* nas extremidades e ao redor do elemnento ativo*/
+.li-unselect{
+    background-color: rgb(65, 64, 64);
+}
+
+/* usado acima da classe selecionada se tiver no meio da lista */
+.top-unselect {
+    border-top-right-radius: 20px;
+    background-color: rgb(27, 27, 24);
+}
+/* usado acima da classe selecionada se tiver no meio da lista */
+.bottom-unselect {
+    border-bottom-right-radius: 20px;
+    background-color: rgb(27, 27, 24);
+    color: rgb(170, 166, 166);
+}
+
+/* usado quando o selecionado é o primeiro da lista */
+.first-element-selected {
+    background-color: rgb(41, 41, 41);
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+}
+
+/* quando for o ultimo elemento da lista o selecionado */
+.last-element-selected {
+    background-color: rgb(41, 41, 41);
+    border-top-right-radius: 20px;
+    padding: 10px;
+}
+
+table {
+    padding-top: 30px;
+    width: 100%;
+    border-collapse:collapse;
+    white-space: nowrap;
+    text-align: center;
+}
+.thead {
+    border-bottom-right-radius: 20px;
+}
+
+th {
+    padding: 10px;
+    background-color: rgb(39, 39, 39);
+    font-size: large;
+    font-weight: 600;
+    color: rgb(170, 166, 166);
+}
+
+td{
+    padding: 5px;
+    color: white;
+}
+
+select {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(158, 156, 156);
+    outline: none;
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    background-color: rgb(88, 86, 86);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(158, 156, 156);
+}
+
+
+.input {
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: rgb(158, 156, 156);
+    border: solid 3px gray;
+    outline: none;
+}
+
+.cad-cliente-page{
+    flex: 1;
+    height: 88.8vh;
+    padding: 40px;
+    color: white;
+    font-size: xx-large;
+    padding-right: 60px;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-busca {
+    width: 15px;
+    padding: 5px;
+}
+
+.div-lupa {
+    background-color: rgb(39, 39, 39);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: solid 1px gray;
+}
+
+.div-lupa:hover{
+    cursor: pointer;
+    background-color: rgb(95, 95, 95);
+}
+
+.btnExcluir {
+    font-size: larger;
+    font-weight: bolder;
+    color: red;
+}
+
+.btnExcluir:hover {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    cursor: pointer;
+    background-color: rgb(77, 75, 75);
+    background-color: rgb(77, 75, 75);
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(77, 75, 75);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(39, 39, 39);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(39, 39, 39);  /* creates padding around scroll thumb */
+}
+
+.over-y-scroll {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.over-y-scroll::-webkit-scrollbar {
+    width: 12px;  
+    height: 20px;             /* width of the entire scrollbar */
+}
+
+.over-y-scroll::-webkit-scrollbar-track {
+    background: rgb(77, 75, 75);        /* color of the tracking area */
+    border-radius: 10px;
+}
+
+.over-y-scroll::-webkit-scrollbar-thumb {
+    background-color: rgb(39, 39, 39);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(39, 39, 39);  /* creates padding around scroll thumb */
+}
+
+.actions-div {
+    gap: 30px;
+}
+.input-header {
+    width: 100%;
+    padding: 10px;
+}
+
+.ipt-bdr-lft {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.ipt-bdr-rght {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.otln-none{
+    outline: none;
+}
+
+.bdr-none {
+    border: none;
+}
+
+.dp-none{
+    display: none;
+}
+
+.ok-btn{
+    font-size: large;
+    font-weight: bolder;
+    color: green;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.hv-pointer:hover {
+    cursor: pointer;
+}
+
+.x-btn {
+    font-size: large;
+    font-weight: bolder;
+    color: red;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.flex-spc-btwn{
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.csr-none{
+    cursor:default;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.bdr-top-left-radius {
+    border-top-left-radius: 20px;
+}
+
+.input-area{
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    outline: none;
+    border: solid 1px gray;
+}
+
+.select-cad{
+    padding-inline: 100px;
+    padding-block: 10px;
+    background-color: white;
+}
+
+.btns-cad{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.top-pd {
+    padding-top: 10px;
+}
+

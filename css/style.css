@@ -1,0 +1,247 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #cccccc;
+    width: 100%;
+    height: 120vh;
+    padding: 50px;
+}
+
+.flex {
+    display: flex;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.campoSelecao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select1 {
+    padding: 10px;
+    border: solid 1px grey;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+#section2 {
+    padding: 30px;
+    height: 100%;
+}
+
+option {
+    border-radius: 10px;
+}
+
+#cadastros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#campo-de-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.campo-busca {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+#legenda {
+    font-size: x-large;
+    font-weight: 600;
+}
+
+#field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+.inputs {
+    width: 100%;
+    border: solid 1px grey;
+    border-radius: 20px;
+    outline: none;
+}
+
+.btn {
+    padding: 10px;
+    border: solid 1px grey;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+#btnCad{
+    background-color: blue;
+}
+
+#btnCad:hover {
+    cursor: pointer;
+    background-color: rgb(69, 69, 170);
+}
+
+#btnCon {
+    background-color: grey;
+}
+
+#btnCon:hover {
+    cursor: pointer;
+    background-color: rgb(78, 76, 76);
+}
+
+.inputColunm {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputFlex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#dados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+table {
+    text-align: center;
+    padding: 2px;
+}
+
+thead {
+    background-color: blue;
+    border: solid 1px rgb(82, 80, 80);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+th {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+td {
+    padding: 10px;
+    border: solid 1px ;
+    border-radius: 10px;
+}
+
+#titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.header {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-blue:hover{
+    cursor: pointer;
+    background-color: rgb(69, 69, 170);
+}
+
+.bg-gray {
+    background-color: gray;
+}
+
+.bg-gray:hover{
+    cursor: pointer;
+    background-color: rgb(172, 159, 159);
+}
+
+#div-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.display-flex-ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.edit-img {
+    width: 20px;
+}
+
+.edit-img:hover {
+    cursor: pointer;
+}
+
+.removeBtn {
+    color: red;
+    font-size: large;
+    font-weight: 700;
+}
+
+.removeBtn:hover {
+    cursor: pointer;
+}
+
+/* #warnings {
+    display: none;
+} */
