@@ -182,23 +182,56 @@ function loadTable (param) {
   }   
 }
 
-document.getElementById("gerar-relarotio").addEventListener("click", function() {
-  // Coleta os dados da tabela
-  const table = document.getElementById("dados-da-tabela");
-  const rows = table.getElementsByTagName("tr");
-  const data = [];
-  for (let i = 1; i < rows.length; i++) { // Começa em 1 para pular o cabeçalho
-      const cells = rows[i].getElementsByTagName("td");
-      const rowData = [];
-      for (let j = 0; j < cells.length; j++) {
-          rowData.push(cells[j].textContent);
-      }
-      data.push(rowData);
+document.getElementById("gerar-relatorio").addEventListener("click", async () => {
+  let array  = []
+  
+  console.log(select.value)
+
+  if(select.value == "cliente") {
+    array = clientes
+  }
+  else if(select.value == 'vendedor') {
+    array = vendedores
+  }
+  else if (select.value == 'produto') {
+    array = produtos
   }
 
-  // Envia os dados para o servidor Python
-  axios.post("/gerar_relatorio", { data }).then(function(response) {
-      console.log(response.data); // Este é o relatório gerado em Python
-  });
+  array = JSON.stringify(array)
+  if(array){
+    try {
+      await gerar_relatorio(array) 
+    }
+    catch (error) {
+      console.log(error)
+    }
+  }
+
 });
 
+async function gerar_relatorio(data) {
+
+  const response = await fetch(
+    '/gerar_relatorio', 
+    {method: 'POST', 
+    headers: {'Content-Type': 'application/json'}, 
+    body: JSON.stringify({relatorio: data})}
+  );
+
+  if(response.ok) {
+    console.log("Resposta com sucesso")
+    const blob = await response.blob();
+    const blob_url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = blob_url
+    link.download = 'Relatorio.xlsx';
+    link.textContent = 'Download relatorio'
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
+  else {
+    console.log("Erro ao gerar arquivo :(")
+  }
+
+}
