@@ -501,6 +501,7 @@ a{
     padding: 10px;
 }
 
+
 /* quando for o ultimo elemento da lista o selecionado */
 .last-element-selected {
     background-color: rgb(41, 41, 41);
@@ -560,6 +561,14 @@ select {
     background-color: rgb(158, 156, 156);
     border: solid 3px gray;
     outline: none;
+}
+
+#cad {
+    display: none;
+}
+
+#tabela {
+    display: block;
 }
 
 .cad-cliente-page{

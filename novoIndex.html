@@ -26,15 +26,15 @@
                 <aside class="aside-tab">
                     <ul class="tabelas" id="tab-selections">
                         <li class="list li-unselect"><div class="first-element-selected"></div></li>
-                        <li class="list li" id="active"><div class="li-div">Cliente</div></li>
+                        <li class="list li active" id="cliente"><div class="li-div">Cliente</div></li>
                         <!-- <a href="/vendedorIndex.html"> -->
                             <li class="list li li-unselect">
-                                <div class="li-div hover-li bg-black-gray top-unselect">Vendedor</div>
+                                <div class="li-div hover-li bg-black-gray top-unselect" id="vendedor" onclick="carregarUlVendedor()">Vendedor</div>
                             </li>
                         <!-- </a> -->
                         <!-- <a href="/produtoIndex.html"> -->
                             <li class="list li">
-                                <div class="li-div hover-li bg-black-gray"> Produto</div>
+                                <div class="li-div hover-li bg-black-gray" id="produto" onclick="carregarUlProduto()"> Produto</div>
                             </li>
                         <!-- </a> -->
                     </ul>
@@ -108,6 +108,7 @@
                                         </div>
                                     </li>
                                 </ul>
+                                <button class="btn">Gerar Relatorio</button>
                             </ul>
                         </div>
                         <table>
@@ -116,9 +117,9 @@
                                     <th>Name</th>
                                     <th>Email</th>
                                     <th>telefone</th>
-                                    <th class="">
+                                    <!-- <th class="">
                                         Ações
-                                    </th>
+                                    </th> -->
                                 </tr>
                             </thead>
                         </table>

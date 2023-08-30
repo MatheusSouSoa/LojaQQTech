@@ -7,9 +7,9 @@ import { cabecalho } from './templates/cabecalhos.js'
 import {  validarCampos } from './validator/validators.js'
 import atualizarSelect from './templates/carregarSelect.js'
 
-export const vendedores = []
-export const clientes = []
-export const produtos = []
+export let vendedores = []
+export let clientes = []
+export let produtos = []
 
 const select = document.querySelector("#select01");
 const btnCad = document.querySelector("#btnCad");
@@ -43,6 +43,7 @@ function filtrar() {// ta feio, mas funciona :(. eu acho KKKKKKKKKKKKKKKKKKKKK
   let CurrentSelect = select3.value
   filter = []
 
+  let array = []
     if(select.value == "cliente"){
         for(const cliente of clientes) {
             if(cliente.nome == filtro && CurrentSelect == "nome") {
@@ -128,6 +129,8 @@ export function cadastrar() {
   
   const v = new Vendedor(nome, matricula)
     vendedores.push(v)
+    vendedores = vendedores.sort((a, b) => a.nome.localeCompare(b.nome))
+    console.log(vendedores)
   }
   else if(select.value == 'produto') {
     const nome = document.querySelector("#nome").value
@@ -198,6 +201,7 @@ document.getElementById("gerar-relatorio").addEventListener("click", async () =>
   }
 
   array = JSON.stringify(array)
+
   if(array){
     try {
       await gerar_relatorio(array) 
